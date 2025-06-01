@@ -30,7 +30,7 @@ jobs:
         run: python preprocessing/automate_Muhammad_Rizki.py
 
       - name: Upload processed data as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v2
         with:
           name: processed-data
           path: preprocessing/*.csv
