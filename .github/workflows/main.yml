@@ -28,9 +28,3 @@ jobs:
           INPUT_FILE: heart-failure-prediction/heart.csv
           OUTPUT_DIRECTORY: preprocessing/
         run: python preprocessing/automate_Muhammad_Rizki.py
-
-      - name: Upload processed data as artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: processed-data
-          path: preprocessing/*.csv
