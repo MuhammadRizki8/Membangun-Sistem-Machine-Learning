@@ -31,3 +31,5 @@ flake8>=5.0.0         # Linting
 # For advanced features (optional)
 plotly>=5.0.0         # Interactive plots
 joblib>=1.2.0         # Model serialization
+
+python-dotenv>=1.0.0
