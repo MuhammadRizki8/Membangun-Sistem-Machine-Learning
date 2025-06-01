@@ -21,10 +21,20 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          pip install python-dotenv  # kalau kamu pakai dotenv di kode
+          pip install python-dotenv  # jika kamu pakai dotenv
 
       - name: Run Preprocessing Script
         env:
           INPUT_FILE: heart-failure-prediction/heart.csv
           OUTPUT_DIRECTORY: preprocessing/
         run: python preprocessing/automate_Muhammad_Rizki.py
+
+      - name: Upload Preprocessed CSVs as Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: preprocessed-csvs
+          path: |
+            preprocessing/X_train_processed.csv
+            preprocessing/X_test_processed.csv
+            preprocessing/y_train_processed.csv
+            preprocessing/y_test_processed.csv
