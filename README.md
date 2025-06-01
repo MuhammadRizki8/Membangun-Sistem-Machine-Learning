@@ -1,4 +1,4 @@
-# Eksperimen*SML*[Nama-siswa]
+# Eksperimen*SML* Muhammad Rizki
 
 Template Eksperimen Machine Learning untuk Klasifikasi Penyakit Jantung menggunakan Heart Failure Prediction Dataset dari Kaggle.
 
