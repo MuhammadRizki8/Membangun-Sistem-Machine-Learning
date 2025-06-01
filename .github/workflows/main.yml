@@ -29,10 +29,8 @@ jobs:
         run: |
           python preprocessing/automate_Muhammad_Rizki.py
 
-      - name: Commit processed data to repo
-        run: |
-          git config --global user.name 'github-actions'
-          git config --global user.email 'github-actions@github.com'
-          git add preprocessing/
-          git commit -m "Add processed data [auto]" || echo "No changes to commit"
-          git push origin main
+      - name: Upload processed data as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: processed-data
+          path: preprocessing/*.csv
