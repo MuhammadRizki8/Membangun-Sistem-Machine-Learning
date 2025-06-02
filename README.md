@@ -1,4 +1,4 @@
-# Eksperimen*SML* Muhammad Rizki
+# Eksperimen _SML_ Muhammad Rizki
 
 Template Eksperimen Machine Learning untuk Klasifikasi Penyakit Jantung menggunakan Heart Failure Prediction Dataset dari Kaggle.
 
@@ -97,6 +97,7 @@ Workflow akan otomatis berjalan ketika:
 - Push ke branch `main` atau `master`
 - Ada perubahan pada folder `preprocessing/` atau file `automate_*.py`
 - Manual trigger melalui GitHub Actions tab
+- dataset hasil dapat diakses pada artifact workflow
 
 ## 📝 Preprocessing Steps
 
@@ -166,13 +167,6 @@ Workflow akan otomatis berjalan ketika:
 4. **Validation**: Quality checks on processed data
 5. **Artifacts**: Upload processed files
 6. **Reporting**: Generate preprocessing report
-
-### Secrets Configuration
-
-For Kaggle dataset download, add these secrets to your repository:
-
-- `KAGGLE_USERNAME`: Your Kaggle username
-- `KAGGLE_KEY`: Your Kaggle API key
 
 ## 📋 Usage Examples
 
@@ -282,7 +276,7 @@ print(classification_report(y_test, y_pred))
 - [Heart Failure Prediction Dataset](https://www.kaggle.com/datasets/fedesoriano/heart-failure-prediction)
 - [Scikit-learn Documentation](https://scikit-learn.org/stable/)
 - [GitHub Actions Documentation](https://docs.github.com/en/actions)
-- [Template MSML Guidelines](link-to-template)
+- [Template MSML Guidelines](https://colab.research.google.com/drive/1vSTQWWgGqPGBGHvv8lbeGdoa5N92D_UC?usp=sharing)
 
 ## 👥 Contributing
 
@@ -291,16 +285,6 @@ print(classification_report(y_test, y_pred))
 3. Commit changes (`git commit -am 'Add improvement'`)
 4. Push to branch (`git push origin feature/improvement`)
 5. Create Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 📧 Contact
-
-- **Author**: [Nama-siswa]
-- **Email**: [email@domain.com]
-- **GitHub**: [@username](https://github.com/username)
 
 ---
 
